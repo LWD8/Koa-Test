@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<%- include header.ejs%>
+
+    <h1><%= title %></h1>
+    <% for(var i = 0; i< list.length;i++) {%>
+      <p><%= list[i] %></p>
+    <% } %>
+    <% if(list.length > 5) {%>
+      <div>数据大于5条</div>
+    <%} else {%>
+      <div>数据小于5条</div>
+      <img src="/logo.jpg" alt="">
+    <% } %>
+
+<%- include fooder.ejs%>

@@ -1,0 +1,26 @@
+{{ include './header.art' }}
+  <h3>拆分头、尾部</h3>
+  <p>获取Cooikes中Token:{{token}}</p>
+  {{each list}}
+  <p>{{$index}}{{$value}}</p>
+  {{/each}}
+  <p>使用MongoDB获取admin集合数据</p>
+  {{each adminData}}
+  <p>{{$value}}</p>
+  {{/each}}
+  <p>使用MongoDB获取user集合数据</p>
+  {{each userData}}
+  <p>{{$value}}</p>
+  {{/each}}
+
+  <form action="/art/doAdd" method="post">
+      姓名：<input type="text" name="name"/>
+      <br/>
+      <br/>
+      年　龄：<input type="text" name="age"/>
+      <br/>
+      <br/>
+      <br/>
+      <input type="submit" value="提交"/>
+  </form>
+{{ include './fooder.art' }}

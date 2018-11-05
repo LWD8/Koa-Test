@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{block 'title'}}My Site{{/block}}</title>
+
+    {{block 'head'}}{{/block}}
+</head>
+<body>
+    {{block 'content'}}{{/block}}
+</body>
+</html>
