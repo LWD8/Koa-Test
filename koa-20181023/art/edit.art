@@ -1,0 +1,11 @@
+{{extend './layout.art'}}
+
+{{block 'title'}}{{title}}{{/block}}
+
+{{block 'content'}}
+  <h2>{{title}}</h2>
+  <h3>获取koa-session中的username:{{username}}</h3>
+  {{each list}}
+  <p>{{$index}}{{$value}}</p>
+  {{/each}}
+{{/block}}
